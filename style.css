@@ -250,6 +250,8 @@ ul li a:hover
     color: palevioletred;
 }
 
+
+/* a neon style */
 .buttons a {
     position: relative;
     padding: 20px 20px;
@@ -328,6 +330,94 @@ ul li a:hover
 {
     opacity: 1;
 }
+
+
+/* button neon style */
+.buttons button {
+    position: relative;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 40px auto;
+    transition: 1s;
+    text-decoration: none;
+    overflow: hidden;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0004);
+    border: none;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+                /* 0 0 30px var(--clr), */
+                /* 0 0 60px var(--clr), */
+                0 0 80px var(--clr);
+}
+
+.buttons button::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 700%;
+    background: var(--clr);
+    transition: 1s;
+    animation: animateButton 2s linear infinite;
+    animation-delay: calc(0.33s * var(--i));
+}
+
+.buttons button:hover::before {
+    width: 120%;
+}
+
+@keyframes animateButton {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.buttons button::after {
+    content: '';
+    position: absolute;
+    background: var(--white);
+    inset: 4px;
+    transition: 0.5s;
+}
+
+.buttons button:hover::after {
+    background: var(--clr);
+}
+
+.buttons button span {
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    color: var(--black);
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: 0.5s;
+}
+
+.buttons button:hover span {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* theme switch */
 
