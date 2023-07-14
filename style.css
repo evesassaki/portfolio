@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+:root {
+    --black: #333;
+    --black2: #707070;
+    --white: #fff;
+    --white2: rgba(255, 255, 255, 0.76);
+}
+
+.dark {
+    --black: #fff;
+    --black2: #444;
+    --white: #333;
+    --white2: #444444c7;
+}
+
+
+/* Navbar */
+  .navbar {
+    height: 100px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+  }
+
+/* change navbar background on collapse */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: var(--white2);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: flex-end;
+        padding-bottom: 35px;
+    }
+    form {
+        margin-top: 50px;
+    }
+}
+
+ul li a
+{
+    position: relative;
+    margin: 20px 0;
+    display: inline-block;
+    padding: 0 50px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+ul li a:hover
+{
+    transform: scale(1.4);
+    transition: all .2s ease-in-out;
+    color: var(--black);
+}
+
+/* Hero section */
+
+.hero-main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: last baseline;
+    align-content: center;
+    flex-shrink: 3;
+    row-gap: 200px;
+    column-gap: 45px;
+}
+
+.square {
+    position: relative;
+    top: 150px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 63% 37% 60% 40% / 55% 73% 27% 45%;
+    background-image: url('images/profile.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: content-box;
+    animation: Morph 4s infinite;
+}
+
+.square span {
+    position: absolute;
+    inset: 0;
+    border: 2px solid var(--black);
+    opacity: 0.5;
+}
+
+.square span:nth-child(1)
+{
+    border-radius: 52% 48% 48% 52% / 47% 51% 49% 53%;
+    animation: animateSquare 6s linear infinite;
+}
+.square span:nth-child(2)
+{
+    border-radius: 32% 68% 30% 70% / 63% 63% 37% 37%;
+    animation: animateSquare2 12s linear infinite;
+}
+.square span:nth-child(3)
+{
+    border-radius: 63% 37% 60% 40% / 55% 73% 27% 45%;
+    animation: animateSquare 10s linear infinite; 
+}
+
+@keyframes Morph {
+    0%,
+    100% {
+        border-radius: 58% 42% 53% 47% / 55% 49% 51% 45%;
+
+    }
+
+    50% {
+        border-radius: 69% 31% 73% 27% / 34% 63% 37% 66%;
+    }
+}
+
+
+@keyframes animateSquare
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+@keyframes animateSquare2
+{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+
+@media (min-width: 768px) {
+  #about-me
+    {
+    margin-top: 100px;
+    }  
+  }
+
+  @media (max-width: 768px) {
+    .hero-text{
+        margin: 45px;
+    }
+    .tech-stack{
+        margin: 50px;
+    }
+  }
+
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+
+/* social media icons styling */
+.sm-icons {
+    font-size: 36px;
+}
+
+.sm-icons i{
+    color: var(--black);
+    cursor: pointer;
+}
+
+.tech-stack {
+    font-size: 56px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-html5:hover
+{
+    color: orangered;
+}
+.fa-css3-alt:hover
+{
+    color: blue;
+}
+.fa-react:hover
+{
+    color: cornflowerblue;
+}
+.fa-square-js:hover
+{
+    color: yellow;
+}
+.fa-node-js:hover
+{
+    color: greenyellow;
+}
+.fa-sass:hover
+{
+    color: palevioletred;
+}
+
+.buttons a {
+    position: relative;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    margin: 40px;
+    transition: 1s;
+    text-decoration: none;
+    overflow: hidden;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0004);
+}
+.buttons a:hover {
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+                /* 0 0 30px var(--clr), */
+                /* 0 0 60px var(--clr), */
+                0 0 80px var(--clr);
+}
+
+.buttons a::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 700%;
+    background: var(--clr);
+    transition: 1s;
+    animation: animateButton 2s linear infinite;
+    animation-delay: calc(0.33s * var(--i));
+}
+
+.buttons a:hover::before {
+    width: 120%;
+}
+
+@keyframes animateButton
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.buttons a::after
+{
+    content: '';
+    position: absolute;
+    background: var(--white);
+    inset: 4px;
+    transition: 0.5s;
+}
+
+.buttons a:hover::after
+{
+    background: var(--clr);
+}
+
+.buttons a span
+{
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    color: var(--black);
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: 0.5s;
+}
+
+.buttons a:hover span
+{
+    opacity: 1;
+}
+
+/* theme switch */
+
+.themeSwitch {
+    width: 30px;
+    height: 30px;
+    background: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.themeSwitch::before {
+    content: '\f186';
+    font-family: fontAwesome;
+}
+
+
+.themeSwitch::after {
+    color: var(--black);
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark .themeSwitch::before {
+    content: '\f185';
+    font-family: fontAwesome;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer styling */
+#footer {
+    background-color: #333;
+    text-align: center;
+    height: 150px;
+    color: #fff;
+    padding-top: 75px;
+}
+
+/* spacing on all sections */
+#about, #services, #portfolio, #contact {
+    margin-top: 6rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
+}

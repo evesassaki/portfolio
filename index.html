@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio Evelyn Sassaki</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/d77b098907.js" crossorigin="anonymous"></script>
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container">
+                    <div class="sm-icons">
+                        <a href="https://github.com/evesassaki" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/evelyn-sassaki-06a89a266" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="themeSwitch"></div>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero section -->
+<div class="container-fluid">
+    <div class="hero-main" id="home">
+        <div class="square">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="profile-pic">
+            </div>
+        </div>
+    <div class="hero-text">
+        <h2>Full Stack Engineer</h2>
+        <h2>フルスタックエンジニア</h2>
+        <p>Hey there, my name is Evelyn Sassaki and I'm currently living in Japan!</p>
+        <p>こんにちは。私は「ササキ・エヴェリン」と申します。現在、日本にすいんでいます。</p>
+        <div class="buttons">
+            <a href="./curriculum/EvelynSassaki_FullStackDeveloper_CV.pdf" download style="--clr: #ff22bb; --i:0;"><span>Download my CV!</span></a>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<!-- about section-->
+<section id="about">
+    <div class="container mt-4 pt-4">
+        <h1 class="text-center" id="about-me">About Me ・ 私について</h1>
+        <div class="row mt-4">
+            
+            <div class="col-lg-8">
+                <p>
+                    Nice to meet you! I'm a Brazilian christian woman, who loves to travel and building awesome web applications! I've started coding html blogs when I was eleven years old, and although I've only decided to pursue a career in tech now, coding has always been my passion. From designing user-friendly interfaces to crafting robust back-end systems, I enjoy the entire development process. My strong problem-solving abilities and attention to detail help me tackle challenges head-on and deliver high-quality solutions. Let's collaborate and create some amazing digital experiences together! 
+                </p>
+                <p>
+                    よろしくお願いします! 私はブラジル出身のクリスチャンの女性で、旅行と素晴らしいウェブアプリケーションの構築が大好きです! 11歳のときにHTMLのブログをコーディングし始めましたが、今回テクノロジーのキャリアを追求することを決めました。コーディングは常に私の情熱でありました。ユーザーフレンドリーなインターフェースのデザインから堅牢なバックエンドシステムの構築まで、開発プロセス全体を楽しんでいます。優れた問題解決能力と細部への注意力を持ち、チャレンジに立ち向かい、高品質なソリューションを提供することができます。一緒に素晴らしいデジタル体験を創りましょう!
+                </p>
+                
+                <div class="row mt-3 tech-stack">
+                    <h3>Tech Stack</h3>
+                    <span><i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-square-js"></i>
+                    <i class="fa-brands fa-node-js"></i>
+                    <i class="fa-brands fa-sass"></i></span>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <img src="images/about.jpg" class= "imageAboutPage" alt="Evelyn's about me photo">
+            </div>
+
+        </div>
+</section>
+
+
+
+<!-- portfolio section-->
+<section id="portfolio">
+    <div class="container mt-3">
+        <h1 class="text-center">Portfolio</h1>
+        <!-- <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">YouTube Clone</h4>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Quiz App</h4>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Product Landing Page</h4>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        </div>
+</section>
+
+
+<!-- contact section-->
+<section id="contact">
+    <div class="container mt-3 contactContent">
+        <h1 class="text-center">Contact Me</h1>
+
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <div style="overflow:hidden;resize:none;max-width:100%;width:500px;height:500px;"><div id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Ueda,+Nagano,+Japan&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="embedded-map-code" href="https://www.bootstrapskins.com/themes" id="enable-maps-data">premium bootstrap themes</a><style>#embed-ded-map-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- form fields -->
+                <form>
+                    <input type="text" class="form-control form-control-lg" placeholder="Name">
+                    <input type="email" class="form-control mt-3" placeholder="Email">
+                    <input type="text" class="form-control mt-3" placeholder="Subject">
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="10" id="comment" name="text" placeholder="Message"></textarea>
+                    </div>
+                </form>
+                <div class="buttons">
+                
+                <a href="#" style="--clr: #ff22bb; --i:0;"><span>Contact Me</span></a>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+ <!-- footer section-->
+ <footer id="footer">
+    <div class="container-fluid">
+        <p>Copyright &copy; 2023 All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
