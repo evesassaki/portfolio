@@ -444,6 +444,21 @@ ul li a:hover
 
 /* portfolio img */
 
+@media screen and (max-width: 767px) {
+    .projects {
+      grid-template-columns: 1fr; 
+    }
+  
+    .project1 {
+      align-items: center;
+    }
+  
+    .project-img {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+
 .projects {
     display: flex;
     justify-content: center;
